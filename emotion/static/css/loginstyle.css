@@ -1,0 +1,199 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');*/
+
+/*body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background:linear-gradient(blue,red);
+}*/
+
+/* navbar styling */
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 300px;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.navbar.sticky{
+  padding: 15px 0;
+  background: crimson;
+  text-decoration: none;
+}
+.navbar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.navbar .logo a{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .logo a span{
+  color: crimson;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.navbar.sticky .logo a span{
+  color: #fff;
+  text-decoration: none;
+}
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+}
+.navbar .menu li a{
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+.navbar .menu li a:hover{
+  color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+  color: #fff;
+}
+
+body{
+  display: flex;
+    background: url("../images/banner.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif; 
+    
+}
+.button{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #133b0a;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 4px;
+  transition: 0.25s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button:hover{
+  border:0;
+  background:#383434;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #133b0a;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 4px;
+  transition: 0.25s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+
+
+.box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #181111;
+  text-align: center;
+  border-radius: 10px;
+}
+.box h3{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #ca2525;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.button1{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #ca2525;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.button1:hover{
+  border:0;
+  background:#383434;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #b31010;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.box input[type = "submit"]:hover{
+  background: #444746;
+}
+
+

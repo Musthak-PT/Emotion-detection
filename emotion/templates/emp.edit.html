@@ -1,0 +1,244 @@
+
+
+<html>
+
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto');
+*{
+ margin:0;
+ padding: 0;
+ outline: 0;
+}
+.filter{
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #745a08, #0f0d0d);
+
+}
+
+
+table{
+ position: absolute;
+ z-index: 2;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ width: 60%; 
+ border-collapse: collapse;
+ border-spacing: 0;
+ box-shadow: 0 2px 15px rgba(64,64,64,.7);
+ border-radius: 12px 12px 0 0;
+ overflow: hidden;
+
+}
+td , th{
+ padding: 15px 20px;
+ text-align: center;
+ 
+
+}
+th{
+ background-color: #000000;
+ color: #fafafa;
+ font-family: 'Open Sans',Sans-serif;
+ font-weight: 200;
+ text-transform: uppercase;
+
+}
+tr{
+ width: 100%;
+ background-color: #fafafa;
+ font-family: 'Montserrat', sans-serif;
+}
+tr:nth-child(even){
+ background-color: #eeeeee;
+}
+
+
+</style>
+
+ <title>Table layout</title>
+
+ <link rel="stylesheet" href="viewstyle.css">
+
+</head>
+
+<body>
+
+
+  <div class="filter">
+
+ </div>
+
+ <table >
+
+ 
+
+ <tr>
+
+ <th>Full Name</th>
+
+ <!--<th>USER NAME</th>
+
+ <th>PASS WORD</th>-->
+
+ <th>Email </th>
+
+ <th>Phone Number </th>
+
+ <th>Gender</th>
+ <th>Current Emotion</th>
+ <th>&nbsp;</th>
+
+ </tr>
+
+{% for i in val %}
+  <tr>
+
+ 
+ <td>{{i[1]}}&nbsp;</td>
+
+ <!--<td></td>
+
+ <td></td>-->
+
+ <td>{{i[2]}}&nbsp;</td>
+
+ <td>{{i[3]}}&nbsp;</td>
+
+ <td>{{i[4]}}&nbsp;</td>
+ <td>{{i[6]}}&nbsp;</td>
+<!-- <td>-->
+<!-- <a href="">EDIT</a><br>-->
+<!-- <a href="">DELETE</a>-->
+<td>
+        <p>&nbsp;<a href="{{url_for('deleteemp',id=i[0])}}"><text style="text-decoration:dashed;font-weight: bold;color: red;">Delete</text> </a></p></td>
+   {% endfor  %}
+ </tr>
+
+<!-- 
+<tr>
+
+ <td>2</td>
+
+ <td>jack</td>
+
+ <td>Duppont</td>
+
+ <td>1368</td>
+
+ <td>18 Dec 1962</td>
+
+ <td>2000$</td>
+
+ </tr>
+
+ <tr>
+
+ <td>3</td>
+
+ <td>Jean</td>
+
+ <td>leBon</td>
+
+ <td>1368</td>
+
+ <td>18 Nov 1972</td>
+
+ <td>4200$</td>
+
+ </tr>
+
+ <tr>
+
+ <td>4</td>
+
+ <td>Nadia</td>
+
+ <td>leBon</td>
+
+ <td>1368</td>
+
+ <td>18 Mar 1982</td>
+
+ <td>6300$</td>
+
+ </tr>
+
+ <tr>
+
+ <td>5</td>
+
+ <td>Nadia</td>
+
+ <td>leBon</td>
+
+ <td>1368</td>
+
+ <td>18 Mar 1982</td>
+
+ <td>6300$</td>
+
+ </tr>
+
+ <tr>
+
+ <td>6</td>
+
+ <td>Nadia</td>
+
+ <td>leBon</td>
+
+ <td>1368</td>
+
+ <td>18 Mar 1982</td>
+
+ <td>6300$</td>
+
+ </tr>
+
+ <tr>
+
+ <td>7</td>
+
+ <td>Nadia</td>
+
+ <td>leBon</td>
+
+ <td>1368</td>
+
+ <td>18 Mar 1982</td>
+
+ <td>6300$</td>
+
+ </tr>
+
+ <tr>
+
+ <td>8</td>
+
+ <td>Nadia</td>
+
+ <td>leBon</td>
+
+ <td>1368</td>
+
+ <td>18 Mar 1982</td>
+
+ <td>6300$</td>
+
+ </tr>
+ -->
+
+ </table>
+<a class="button" href="/managerhome"><b>Back</b></a>
+
+
+ </body>
+
+</html>
